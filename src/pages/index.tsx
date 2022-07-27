@@ -12,7 +12,7 @@ const Home: NextPage<{ menus: MenuContent[] }> = ({ menus }) => {
           <div key={value.priority} className={menuStyle}>
             <a
               className={linkStyle}
-              href={`fiteasy-shima-training-menu${value.path}`}
+              href={`/fiteasy-shima-training-menu${value.path}`}
               target="_blank"
               rel="noopener noreferrer"
             >
