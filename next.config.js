@@ -5,6 +5,8 @@ const withVanillaExtract = createVanillaExtractPlugin();
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  basePath: process.env.GITHUB_ACTIONS ? '/page-test' : '',
+  trailingSlash: true,
 };
 
 module.exports = withVanillaExtract(nextConfig);
