@@ -5,7 +5,7 @@ const withVanillaExtract = createVanillaExtractPlugin();
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  basePath: process.env.GITHUB_ACTIONS ? '/page-test' : '',
+  basePath: process.env.GITHUB_ACTIONS ? '/fiteasy-shima-training-menu' : '',
   trailingSlash: true,
 };
 
