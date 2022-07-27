@@ -10,7 +10,12 @@ const Home: NextPage<{ menus: MenuContent[] }> = ({ menus }) => {
       {menus.map((value) => {
         return (
           <div key={value.priority} className={menuStyle}>
-            <a className={linkStyle} href={value.path} target="_blank" rel="noopener noreferrer">
+            <a
+              className={linkStyle}
+              href={`fiteasy-shima-training-menu${value.path}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               {value.title}
             </a>
           </div>
